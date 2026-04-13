@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "model": "CLIP_ViT_B32_IFND",
+        "dataset": "IFND",
+        "parameters": "151.2M",
+        "latency_ms": "N/A"
+    },
+    "metrics": {
+        "test_set": {
+            "accuracy": 0.9858,
+            "precision": 0.9853,
+            "recall": 0.9963,
+            "f1_score": 0.9908,
+            "auc": 0.99266
+        }
+    }
+}

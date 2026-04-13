@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "model": "BERT_MirageNews",
+        "dataset": "MirageNews",
+        "parameters": "110M",
+        "latency_ms": "N/A"
+    },
+    "detailed_results": {
+        "test1_nyt_mj": {
+            "acc": 0.94,
+            "f1": 0.9405,
+            "auc": 0.9822
+        },
+        "test2_bbc_dalle": {
+            "acc": 0.782,
+            "f1": 0.8162,
+            "auc": 0.9285
+        },
+        "test3_cnn_dalle": {
+            "acc": 0.864,
+            "f1": 0.8702,
+            "auc": 0.9481
+        },
+        "test4_bbc_sdxl": {
+            "acc": 0.774,
+            "f1": 0.812,
+            "auc": 0.9393
+        },
+        "test5_cnn_sdxl": {
+            "acc": 0.86,
+            "f1": 0.8669,
+            "auc": 0.9517
+        }
+    },
+    "summary": {
+        "ood_average_accuracy": 0.82,
+        "ood_average_f1": 0.8413
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "model": "CLIP ViT-B32 Prompt Tuning IFND",
+        "dataset": "IFND",
+        "parameters": "76,800 (trainable)",
+        "latency_ms": "N/A"
+    },
+    "metrics": {
+        "test_set": {
+            "accuracy": 0.7664,
+            "precision": 0.7664,
+            "recall": 1.0,
+            "f1_score": 0.8677,
+            "auc": 0.58375
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "model": "CLIP ViT-B32 LoRA IFND",
+        "dataset": "IFND",
+        "parameters": "493,570 (trainable)",
+        "latency_ms": "N/A"
+    },
+    "metrics": {
+        "test_set": {
+            "accuracy": 0.9877,
+            "precision": 0.9877,
+            "recall": 0.9963,
+            "f1_score": 0.992,
+            "auc": 0.99971
+        }
+    }
+}

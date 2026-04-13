@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "model": "CLIP ViT-B32 Adapter MirageNews",
+        "dataset": "MirageNews",
+        "parameters": "1,027,330",
+        "latency_ms": 191.13
+    },
+    "detailed_results": {
+        "test1_nyt_mj": {
+            "acc": 0.96,
+            "f1": 0.9602,
+            "auc": 0.99242
+        },
+        "test2_bbc_dalle": {
+            "acc": 0.616,
+            "f1": 0.5616,
+            "auc": 0.73442
+        },
+        "test3_cnn_dalle": {
+            "acc": 0.614,
+            "f1": 0.5624,
+            "auc": 0.77577
+        },
+        "test4_bbc_sdxl": {
+            "acc": 0.77,
+            "f1": 0.7801,
+            "auc": 0.89702
+        },
+        "test5_cnn_sdxl": {
+            "acc": 0.788,
+            "f1": 0.7992,
+            "auc": 0.91051
+        }
+    },
+    "summary": {
+        "ood_average_accuracy": 0.697,
+        "ood_average_f1": 0.6758
+    }
+}

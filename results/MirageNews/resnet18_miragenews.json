@@ -1,0 +1,39 @@
+{
+    "metadata": {
+        "model": "ResNet18 MirageNews",
+        "dataset": "MirageNews",
+        "parameters": "11.17M",
+        "latency_ms": 14.82
+    },
+    "detailed_results": {
+        "test1_nyt_mj": {
+            "acc": 0.98,
+            "f1": 0.9798,
+            "auc": 0.9969
+        },
+        "test2_bbc_dalle": {
+            "acc": 0.702,
+            "f1": 0.6511,
+            "auc": 0.7985
+        },
+        "test3_cnn_dalle": {
+            "acc": 0.708,
+            "f1": 0.6507,
+            "auc": 0.7911
+        },
+        "test4_bbc_sdxl": {
+            "acc": 0.716,
+            "f1": 0.6787,
+            "auc": 0.8194
+        },
+        "test5_cnn_sdxl": {
+            "acc": 0.76,
+            "f1": 0.7297,
+            "auc": 0.8547
+        }
+    },
+    "summary": {
+        "ood_average_accuracy": 0.7215,
+        "ood_average_f1": 0.6775
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "model": "TF-IDF SVM IFND",
+        "dataset": "IFND",
+        "parameters": "N/A",
+        "latency_ms": "N/A"
+    },
+    "metrics": {
+        "test_set": {
+            "accuracy": 0.9838,
+            "precision": "N/A",
+            "recall": "N/A",
+            "f1_score": 0.9895,
+            "auc": 0.99275
+        }
+    }
+}

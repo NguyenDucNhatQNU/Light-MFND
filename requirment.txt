@@ -1,0 +1,9 @@
+torch>=2.0.0
+transformers
+peft
+opencv-python
+pandas
+scikit-learn
+ftfy
+regex
+tqdm
