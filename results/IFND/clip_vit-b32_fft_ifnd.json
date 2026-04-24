@@ -1,17 +1,18 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 FFT IFND",
-        "dataset": "IFND",
-        "parameters": "151.2M",
-        "latency_ms": "N/A"
+    "Model": "CLIP ViT-B/32",
+    "Method": "Full Fine-Tuning (FFT)",
+    "Dataset": "IFND-multimodal",
+    "Hardware_Stats": {
+        "Total_Params_M": 152.85,
+        "Training_Time_Min": 12.71,
+        "Peak_VRAM_GB": 2.87,
+        "Latency_P50_ms": 26.24
     },
-    "metrics": {
-        "test_set": {
-            "accuracy": 0.9915,
-            "precision": 0.9902,
-            "recall": 0.9988,
-            "f1_score": 0.9944,
-            "auc": 0.9989
-        }
+    "Test_Metrics": {
+        "Accuracy": 79.96,
+        "Precision": 79.27,
+        "Recall": 100.0,
+        "F1_Score": 88.44,
+        "AUC": 0.984
     }
 }

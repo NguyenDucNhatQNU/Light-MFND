@@ -1,17 +1,15 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 Prompt Tuning IFND",
-        "dataset": "IFND",
-        "parameters": "76,800 (trainable)",
-        "latency_ms": "N/A"
+    "Model": "CLIP ViT-B/32",
+    "Method": "Prompt Tuning (Length=16)",
+    "Dataset": "IFND",
+    "Hardware_Stats": {
+        "Training_Time_Min": 13.54,
+        "Peak_VRAM_GB": 0.97,
+        "Latency_P50_ms": 24.71
     },
-    "metrics": {
-        "test_set": {
-            "accuracy": 0.7664,
-            "precision": 0.7664,
-            "recall": 1.0,
-            "f1_score": 0.8677,
-            "auc": 0.58375
-        }
+    "Test_Metrics": {
+        "Accuracy": 98.86,
+        "F1_Score": 99.26,
+        "AUC": 0.998
     }
 }

@@ -1,17 +1,20 @@
 {
-    "metadata": {
-        "model": "CLIP_ViT_B32_IFND",
-        "dataset": "IFND",
-        "parameters": "151.2M",
-        "latency_ms": "N/A"
+    "Model": "CLIP ViT-B/32",
+    "Method": "Adapter (Manual Bottleneck=64)",
+    "Dataset": "IFND-multimodal",
+    "Hardware_Stats": {
+        "Total_Params_M": 154.84,
+        "Trainable_Params_M": 3.56,
+        "Training_Time_Min": 13.39,
+        "Peak_VRAM_GB": 0.81,
+        "Latency_P50_ms": 52.89,
+        "Latency_P90_ms": 96.92
     },
-    "metrics": {
-        "test_set": {
-            "accuracy": 0.9858,
-            "precision": 0.9853,
-            "recall": 0.9963,
-            "f1_score": 0.9908,
-            "auc": 0.99266
-        }
+    "Test_Metrics": {
+        "Accuracy": 99.15,
+        "Precision": 99.14,
+        "Recall": 99.75,
+        "F1_Score": 99.44,
+        "AUC": 0.9965
     }
 }
