@@ -1,39 +1,43 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 Adapter MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "1,027,330",
-        "latency_ms": 191.13
+    "Model": "CLIP ViT-B/32",
+    "Method": "Adapter (Bottleneck=64)",
+    "Dataset": "MirageNews",
+    "Hardware_Stats": {
+        "Peak_VRAM_GB": 0.81,
+        "Peak_VRAM_MB": 829.44,
+        "Latency_P50_ms": 53.89,
+        "Latency_P90_ms": null
     },
-    "detailed_results": {
+    "Test_Splits": {
         "test1_nyt_mj": {
-            "acc": 0.96,
-            "f1": 0.9602,
-            "auc": 0.99242
+            "Accuracy": 97.8,
+            "F1": 97.79,
+            "AUC": 0.9978
         },
         "test2_bbc_dalle": {
-            "acc": 0.616,
-            "f1": 0.5616,
-            "auc": 0.73442
+            "Accuracy": 56.6,
+            "F1": 48.21,
+            "AUC": 0.6451
         },
         "test3_cnn_dalle": {
-            "acc": 0.614,
-            "f1": 0.5624,
-            "auc": 0.77577
+            "Accuracy": 59.0,
+            "F1": 50.6,
+            "AUC": 0.6711
         },
         "test4_bbc_sdxl": {
-            "acc": 0.77,
-            "f1": 0.7801,
-            "auc": 0.89702
+            "Accuracy": 73.2,
+            "F1": 73.73,
+            "AUC": 0.8118
         },
         "test5_cnn_sdxl": {
-            "acc": 0.788,
-            "f1": 0.7992,
-            "auc": 0.91051
+            "Accuracy": 79.4,
+            "F1": 80.08,
+            "AUC": 0.8719
         }
     },
-    "summary": {
-        "ood_average_accuracy": 0.697,
-        "ood_average_f1": 0.6758
+    "OOD_Average": {
+        "Accuracy": 67.05,
+        "F1": 63.16,
+        "AUC": 0.75
     }
 }

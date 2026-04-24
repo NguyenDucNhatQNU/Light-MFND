@@ -1,49 +1,56 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 Prompt Tuning MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "~76,800",
-        "latency_ms": 192.51
+    "Model": "CLIP ViT-B/32",
+    "Method": "Prompt Tuning (Length=5)",
+    "Dataset": "MirageNews",
+    "Hardware_Stats": {
+        "Trainable_Params": 1579010,
+        "Training_Time_Min": 20.38,
+        "Peak_VRAM_GB": 0.97,
+        "Latency_P50_ms": 26.75,
+        "Latency_P90_ms": 48.31
     },
-    "detailed_results": {
+    "Test_Splits": {
         "test1_nyt_mj": {
-            "acc": 0.964,
-            "prec": 0.9677,
-            "rec": 0.96,
-            "f1": 0.9639,
-            "auc": 0.99518
+            "Accuracy": 97.8,
+            "Precision": 98.78,
+            "Recall": 96.8,
+            "F1": 97.78,
+            "AUC": 0.998
         },
         "test2_bbc_dalle": {
-            "acc": 0.658,
-            "prec": 0.6653,
-            "rec": 0.636,
-            "f1": 0.6503,
-            "auc": 0.72437
+            "Accuracy": 61.2,
+            "Precision": 64.29,
+            "Recall": 50.4,
+            "F1": 56.5,
+            "AUC": 0.6903
         },
         "test3_cnn_dalle": {
-            "acc": 0.674,
-            "prec": 0.6776,
-            "rec": 0.664,
-            "f1": 0.6707,
-            "auc": 0.7603
+            "Accuracy": 65.6,
+            "Precision": 70.53,
+            "Recall": 53.6,
+            "F1": 60.91,
+            "AUC": 0.7062
         },
         "test4_bbc_sdxl": {
-            "acc": 0.75,
-            "prec": 0.709,
-            "rec": 0.848,
-            "f1": 0.7723,
-            "auc": 0.81597
+            "Accuracy": 73.6,
+            "Precision": 72.52,
+            "Recall": 76.0,
+            "F1": 74.22,
+            "AUC": 0.7839
         },
         "test5_cnn_sdxl": {
-            "acc": 0.778,
-            "prec": 0.7372,
-            "rec": 0.864,
-            "f1": 0.7956,
-            "auc": 0.87509
+            "Accuracy": 78.6,
+            "Precision": 78.49,
+            "Recall": 78.8,
+            "F1": 78.64,
+            "AUC": 0.8531
         }
     },
-    "summary": {
-        "ood_average_accuracy": 0.715,
-        "ood_average_f1": 0.7222
+    "OOD_Average": {
+        "Accuracy": 69.75,
+        "Precision": 71.46,
+        "Recall": 64.7,
+        "F1": 67.57,
+        "AUC": 0.76
     }
 }

@@ -1,49 +1,38 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 LoRA MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "493,570",
-        "latency_ms": 378.43
+    "test1_nyt_mj": {
+        "Acc (%)": 99.8,
+        "F1 (%)": 99.8,
+        "Latency (ms/sample)": 15.66
     },
-    "detailed_results": {
-        "test1_nyt_mj": {
-            "acc": 0.998,
-            "prec": 1.0,
-            "rec": 0.996,
-            "f1": 0.998,
-            "auc": 1.0
-        },
-        "test2_bbc_dalle": {
-            "acc": 0.674,
-            "prec": 0.7231,
-            "rec": 0.564,
-            "f1": 0.6337,
-            "auc": 0.8219
-        },
-        "test3_cnn_dalle": {
-            "acc": 0.66,
-            "prec": 0.7857,
-            "rec": 0.44,
-            "f1": 0.5641,
-            "auc": 0.84616
-        },
-        "test4_bbc_sdxl": {
-            "acc": 0.792,
-            "prec": 0.7684,
-            "rec": 0.836,
-            "f1": 0.8008,
-            "auc": 0.90254
-        },
-        "test5_cnn_sdxl": {
-            "acc": 0.842,
-            "prec": 0.8734,
-            "rec": 0.8,
-            "f1": 0.8351,
-            "auc": 0.94136
-        }
+    "test2_bbc_dalle": {
+        "Acc (%)": 69.0,
+        "F1 (%)": 62.1,
+        "Latency (ms/sample)": 16.99
     },
-    "summary": {
-        "ood_average_accuracy": 0.742,
-        "ood_average_f1": 0.7084
+    "test3_cnn_dalle": {
+        "Acc (%)": 68.8,
+        "F1 (%)": 58.73,
+        "Latency (ms/sample)": 14.54
+    },
+    "test4_bbc_sdxl": {
+        "Acc (%)": 83.2,
+        "F1 (%)": 82.93,
+        "Latency (ms/sample)": 13.48
+    },
+    "test5_cnn_sdxl": {
+        "Acc (%)": 87.8,
+        "F1 (%)": 87.05,
+        "Latency (ms/sample)": 14.81
+    },
+    "OOD_Average": {
+        "Acc (%)": 77.2,
+        "F1 (%)": 72.7,
+        "Latency (ms/sample)": 14.96
+    },
+    "Hardware_and_Efficiency": {
+        "Trainable_Params": 2067970,
+        "Total_Params": 153345283,
+        "Training_Time_Min": 17.04,
+        "Peak_VRAM_GB": 1.48
     }
 }

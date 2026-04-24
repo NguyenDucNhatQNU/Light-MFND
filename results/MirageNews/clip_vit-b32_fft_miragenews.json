@@ -1,49 +1,38 @@
 {
-    "metadata": {
-        "model": "CLIP ViT-B32 FFT MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "151,277,570",
-        "latency_ms": 189.58
+    "test1_nyt_mj": {
+        "Acc (%)": 100.0,
+        "F1 (%)": 100.0,
+        "Latency (ms/sample)": 20.76
     },
-    "detailed_results": {
-        "test1_nyt_mj": {
-            "acc": 0.978,
-            "prec": 0.9878,
-            "rec": 0.968,
-            "f1": 0.9778,
-            "auc": 0.99918
-        },
-        "test2_bbc_dalle": {
-            "acc": 0.614,
-            "prec": 0.8701,
-            "rec": 0.268,
-            "f1": 0.4098,
-            "auc": 0.84472
-        },
-        "test3_cnn_dalle": {
-            "acc": 0.54,
-            "prec": 0.6667,
-            "rec": 0.16,
-            "f1": 0.2581,
-            "auc": 0.84443
-        },
-        "test4_bbc_sdxl": {
-            "acc": 0.75,
-            "prec": 0.9195,
-            "rec": 0.548,
-            "f1": 0.6867,
-            "auc": 0.91002
-        },
-        "test5_cnn_sdxl": {
-            "acc": 0.758,
-            "prec": 0.8686,
-            "rec": 0.608,
-            "f1": 0.7153,
-            "auc": 0.92202
-        }
+    "test2_bbc_dalle": {
+        "Acc (%)": 58.4,
+        "F1 (%)": 37.72,
+        "Latency (ms/sample)": 20.63
     },
-    "summary": {
-        "ood_average_accuracy": 0.6655,
-        "ood_average_f1": 0.5175
+    "test3_cnn_dalle": {
+        "Acc (%)": 57.6,
+        "F1 (%)": 34.57,
+        "Latency (ms/sample)": 19.13
+    },
+    "test4_bbc_sdxl": {
+        "Acc (%)": 74.8,
+        "F1 (%)": 70.14,
+        "Latency (ms/sample)": 17.13
+    },
+    "test5_cnn_sdxl": {
+        "Acc (%)": 79.4,
+        "F1 (%)": 76.32,
+        "Latency (ms/sample)": 18.18
+    },
+    "OOD_Average": {
+        "Acc (%)": 67.55,
+        "F1 (%)": 54.69,
+        "Latency (ms/sample)": 18.77
+    },
+    "Hardware_and_Efficiency": {
+        "Trainable_Params": 152853763,
+        "Total_Params": 152853763,
+        "Training_Time_Min": 27.34,
+        "Peak_VRAM_GB": 2.87
     }
 }
