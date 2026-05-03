@@ -2,37 +2,40 @@
     "test1_nyt_mj": {
         "Acc (%)": 99.8,
         "F1 (%)": 99.8,
-        "Latency (ms/sample)": 15.66
+        "Latency (ms/sample)": 15.89
     },
     "test2_bbc_dalle": {
-        "Acc (%)": 69.0,
-        "F1 (%)": 62.1,
-        "Latency (ms/sample)": 16.99
+        "Acc (%)": 68.6,
+        "F1 (%)": 64.24,
+        "Latency (ms/sample)": 15.25
     },
     "test3_cnn_dalle": {
-        "Acc (%)": 68.8,
-        "F1 (%)": 58.73,
-        "Latency (ms/sample)": 14.54
+        "Acc (%)": 69.4,
+        "F1 (%)": 61.27,
+        "Latency (ms/sample)": 16.7
     },
     "test4_bbc_sdxl": {
-        "Acc (%)": 83.2,
-        "F1 (%)": 82.93,
-        "Latency (ms/sample)": 13.48
+        "Acc (%)": 79.4,
+        "F1 (%)": 79.84,
+        "Latency (ms/sample)": 12.8
     },
     "test5_cnn_sdxl": {
-        "Acc (%)": 87.8,
-        "F1 (%)": 87.05,
-        "Latency (ms/sample)": 14.81
+        "Acc (%)": 84.0,
+        "F1 (%)": 82.83,
+        "Latency (ms/sample)": 15.11
     },
     "OOD_Average": {
-        "Acc (%)": 77.2,
-        "F1 (%)": 72.7,
+        "Acc (%)": 75.35,
+        "F1 (%)": 72.04,
         "Latency (ms/sample)": 14.96
     },
     "Hardware_and_Efficiency": {
+        "Method": "LoRA",
         "Trainable_Params": 2067970,
         "Total_Params": 153345283,
-        "Training_Time_Min": 17.04,
-        "Peak_VRAM_GB": 1.48
+        "Trainable_Percent": 1.35,
+        "Training_Time_Min": 20.42,
+        "Peak_VRAM_GB": 1.48,
+        "Learning_Rate": 1e-05
     }
 }

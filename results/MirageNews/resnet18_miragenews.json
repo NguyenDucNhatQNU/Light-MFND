@@ -1,39 +1,52 @@
 {
-    "metadata": {
-        "model": "ResNet18 MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "11.17M",
-        "latency_ms": 14.82
+    "test1_nyt_mj": {
+        "Acc (%)": 97.4,
+        "Precision (%)": 98.37,
+        "Recall (%)": 96.4,
+        "F1 (%)": 97.37,
+        "Latency (ms/sample)": 13.93
     },
-    "detailed_results": {
-        "test1_nyt_mj": {
-            "acc": 0.98,
-            "f1": 0.9798,
-            "auc": 0.9969
-        },
-        "test2_bbc_dalle": {
-            "acc": 0.702,
-            "f1": 0.6511,
-            "auc": 0.7985
-        },
-        "test3_cnn_dalle": {
-            "acc": 0.708,
-            "f1": 0.6507,
-            "auc": 0.7911
-        },
-        "test4_bbc_sdxl": {
-            "acc": 0.716,
-            "f1": 0.6787,
-            "auc": 0.8194
-        },
-        "test5_cnn_sdxl": {
-            "acc": 0.76,
-            "f1": 0.7297,
-            "auc": 0.8547
-        }
+    "test2_bbc_dalle": {
+        "Acc (%)": 69.8,
+        "Precision (%)": 77.97,
+        "Recall (%)": 55.2,
+        "F1 (%)": 64.64,
+        "Latency (ms/sample)": 15.84
     },
-    "summary": {
-        "ood_average_accuracy": 0.7215,
-        "ood_average_f1": 0.6775
+    "test3_cnn_dalle": {
+        "Acc (%)": 70.4,
+        "Precision (%)": 79.31,
+        "Recall (%)": 55.2,
+        "F1 (%)": 65.09,
+        "Latency (ms/sample)": 12.74
+    },
+    "test4_bbc_sdxl": {
+        "Acc (%)": 71.4,
+        "Precision (%)": 77.44,
+        "Recall (%)": 60.4,
+        "F1 (%)": 67.87,
+        "Latency (ms/sample)": 15.62
+    },
+    "test5_cnn_sdxl": {
+        "Acc (%)": 74.0,
+        "Precision (%)": 80.93,
+        "Recall (%)": 62.8,
+        "F1 (%)": 70.72,
+        "Latency (ms/sample)": 12.87
+    },
+    "OOD_Average": {
+        "Acc (%)": 71.4,
+        "F1 (%)": 67.08,
+        "Latency (ms/sample)": 14.27
+    },
+    "Hardware_and_Efficiency": {
+        "Method": "ResNet-18 Fine-tuning",
+        "Trainable_Params": 11177538,
+        "Total_Params": 11177538,
+        "Training_Time_Min": 16.38,
+        "Peak_VRAM_GB": 0.37,
+        "Learning_Rate": 1e-05,
+        "Batch_Size": 16,
+        "Epochs": 5
     }
 }

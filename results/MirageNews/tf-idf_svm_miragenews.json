@@ -1,39 +1,45 @@
 {
-    "metadata": {
-        "model": "TF-IDF SVM MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "N/A",
-        "latency_ms": "N/A"
+    "test1_nyt_mj": {
+        "Accuracy (%)": 85.6,
+        "Precision (%)": 85.04,
+        "Recall (%)": 86.4,
+        "F1 (%)": 85.71
     },
-    "detailed_results": {
-        "test1_nyt_mj": {
-            "acc": 0.862,
-            "f1": 0.8623,
-            "auc": 0.9233
-        },
-        "test2_bbc_dalle": {
-            "acc": 0.68,
-            "f1": 0.7351,
-            "auc": 0.8112
-        },
-        "test3_cnn_dalle": {
-            "acc": 0.702,
-            "f1": 0.7372,
-            "auc": 0.7962
-        },
-        "test4_bbc_sdxl": {
-            "acc": 0.688,
-            "f1": 0.7417,
-            "auc": 0.8189
-        },
-        "test5_cnn_sdxl": {
-            "acc": 0.724,
-            "f1": 0.7562,
-            "auc": 0.8085
-        }
+    "test2_bbc_dalle": {
+        "Accuracy (%)": 67.8,
+        "Precision (%)": 62.46,
+        "Recall (%)": 89.2,
+        "F1 (%)": 73.48
     },
-    "summary": {
-        "ood_average_accuracy": 0.6985,
-        "ood_average_f1": 0.7426
+    "test3_cnn_dalle": {
+        "Accuracy (%)": 69.4,
+        "Precision (%)": 65.02,
+        "Recall (%)": 84.0,
+        "F1 (%)": 73.3
+    },
+    "test4_bbc_sdxl": {
+        "Accuracy (%)": 68.0,
+        "Precision (%)": 62.64,
+        "Recall (%)": 89.2,
+        "F1 (%)": 73.6
+    },
+    "test5_cnn_sdxl": {
+        "Accuracy (%)": 71.8,
+        "Precision (%)": 67.19,
+        "Recall (%)": 85.2,
+        "F1 (%)": 75.13
+    },
+    "OOD_Average": {
+        "Accuracy (%)": 69.25,
+        "Precision (%)": 64.33,
+        "Recall (%)": 86.9,
+        "F1 (%)": 73.88
+    },
+    "Model_Info": {
+        "Method": "TF-IDF + Linear SVM",
+        "Vectorizer": "TF-IDF (max_features=5000, ngram_range=(1,2))",
+        "Classifier": "LinearSVC (C=1.0, class_weight=balanced)",
+        "Train_samples": 10000,
+        "Val_samples": 2500
     }
 }

@@ -2,19 +2,21 @@
     "Model": "CLIP ViT-B/32",
     "Method": "Adapter (Manual Bottleneck=64)",
     "Dataset": "IFND-multimodal",
+    "Alignment": "REAL=1, FAKE=0 (corrected)",
+    "Test_Metrics": {
+        "Accuracy": 98.67,
+        "Precision": 98.53,
+        "Recall": 99.75,
+        "F1_Score": 99.14,
+        "AUC": 0.9946
+    },
     "Hardware_Stats": {
         "Total_Params_M": 154.84,
         "Trainable_Params_M": 3.56,
-        "Training_Time_Min": 13.39,
+        "Trainable_Percent": 2.3,
+        "Training_Time_Min": 8.45,
         "Peak_VRAM_GB": 0.81,
-        "Latency_P50_ms": 52.89,
-        "Latency_P90_ms": 96.92
-    },
-    "Test_Metrics": {
-        "Accuracy": 99.15,
-        "Precision": 99.14,
-        "Recall": 99.75,
-        "F1_Score": 99.44,
-        "AUC": 0.9965
+        "Latency_P50_ms": 37.37,
+        "Latency_P90_ms": 47.41
     }
 }

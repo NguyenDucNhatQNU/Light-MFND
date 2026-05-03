@@ -1,39 +1,55 @@
 {
-    "metadata": {
-        "model": "BERT_MirageNews",
-        "dataset": "MirageNews",
-        "parameters": "110M",
-        "latency_ms": "N/A"
-    },
-    "detailed_results": {
-        "test1_nyt_mj": {
-            "acc": 0.94,
-            "f1": 0.9405,
-            "auc": 0.9822
-        },
-        "test2_bbc_dalle": {
-            "acc": 0.782,
-            "f1": 0.8162,
-            "auc": 0.9285
-        },
-        "test3_cnn_dalle": {
-            "acc": 0.864,
-            "f1": 0.8702,
-            "auc": 0.9481
-        },
-        "test4_bbc_sdxl": {
-            "acc": 0.774,
-            "f1": 0.812,
-            "auc": 0.9393
-        },
-        "test5_cnn_sdxl": {
-            "acc": 0.86,
-            "f1": 0.8669,
-            "auc": 0.9517
-        }
-    },
-    "summary": {
-        "ood_average_accuracy": 0.82,
-        "ood_average_f1": 0.8413
-    }
+  "test1_nyt_mj": {
+    "Acc (%)": 94.2,
+    "Precision (%)": 93.0,
+    "Recall (%)": 95.6,
+    "F1 (%)": 94.28,
+    "Latency (ms/sample)": 3.29
+  },
+  "test2_bbc_dalle": {
+    "Acc (%)": 74.8,
+    "Precision (%)": 67.13,
+    "Recall (%)": 97.2,
+    "F1 (%)": 79.41,
+    "Latency (ms/sample)": 2.5
+  },
+  "test3_cnn_dalle": {
+    "Acc (%)": 84.8,
+    "Precision (%)": 81.29,
+    "Recall (%)": 90.4,
+    "F1 (%)": 85.61,
+    "Latency (ms/sample)": 2.4
+  },
+  "test4_bbc_sdxl": {
+    "Acc (%)": 74.8,
+    "Precision (%)": 67.03,
+    "Recall (%)": 97.6,
+    "F1 (%)": 79.48,
+    "Latency (ms/sample)": 2.41
+  },
+  "test5_cnn_sdxl": {
+    "Acc (%)": 85.6,
+    "Precision (%)": 81.79,
+    "Recall (%)": 91.6,
+    "F1 (%)": 86.42,
+    "Latency (ms/sample)": 2.5
+  },
+  "OOD_Average": {
+    "Acc (%)": 80.0,
+    "Precision (%)": 74.31,
+    "Recall (%)": 94.2,
+    "F1 (%)": 82.73,
+    "Latency (ms/sample)": 2.45
+  },
+  "Model_Info": {
+    "Method": "BERT Fine-tuning",
+    "Model": "bert-base-uncased",
+    "Trainable_Params": 109483778,
+    "Total_Params": 109483778,
+    "Training_Time_Min": 11.53,
+    "Peak_VRAM_GB": 2.24,
+    "Learning_Rate": 1e-5,
+    "Batch_Size": 16,
+    "Epochs": 5
+  }
 }

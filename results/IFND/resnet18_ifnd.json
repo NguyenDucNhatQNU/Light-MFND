@@ -1,17 +1,28 @@
 {
-    "metadata": {
-        "model": "ResNet18 IFND",
-        "dataset": "IFND",
-        "parameters": "11.2M",
-        "latency_ms": "N/A"
+    "Dataset": "IFND-multimodal",
+    "Model": "ResNet-18",
+    "Method": "Full Fine-Tuning",
+    "Label_Mapping": "1=REAL, 0=FAKE",
+    "Test_Results": {
+        "Accuracy (%)": 79.11,
+        "Precision (%)": 79.2,
+        "Recall (%)": 98.64,
+        "F1 (%)": 87.86,
+        "AUC": 0.6388
     },
-    "metrics": {
-        "test_set": {
-            "accuracy": 0.7977,
-            "precision": 0.8049,
-            "recall": 0.9715,
-            "f1_score": 0.8804,
-            "auc": 0.70419
-        }
+    "Latency_ms": {
+        "Mean": 2.76,
+        "P50": 2.67,
+        "P95": 3.15
+    },
+    "Hardware_Stats": {
+        "Total_Params_M": 11.18,
+        "Trainable_Params_M": 11.18,
+        "Training_Time_Min": 5.61,
+        "Peak_VRAM_GB": 0.88,
+        "Learning_Rate": 1e-05,
+        "Batch_Size": 32,
+        "Epochs": 5,
+        "Input_Size": "224x224"
     }
 }

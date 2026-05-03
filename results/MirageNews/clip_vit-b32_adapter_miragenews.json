@@ -1,43 +1,41 @@
 {
-    "Model": "CLIP ViT-B/32",
-    "Method": "Adapter (Bottleneck=64)",
-    "Dataset": "MirageNews",
-    "Hardware_Stats": {
-        "Peak_VRAM_GB": 0.81,
-        "Peak_VRAM_MB": 829.44,
-        "Latency_P50_ms": 53.89,
-        "Latency_P90_ms": null
+    "test1_nyt_mj": {
+        "Acc (%)": 92.0,
+        "F1 (%)": 91.8,
+        "Latency (ms/sample)": 17.57
     },
-    "Test_Splits": {
-        "test1_nyt_mj": {
-            "Accuracy": 97.8,
-            "F1": 97.79,
-            "AUC": 0.9978
-        },
-        "test2_bbc_dalle": {
-            "Accuracy": 56.6,
-            "F1": 48.21,
-            "AUC": 0.6451
-        },
-        "test3_cnn_dalle": {
-            "Accuracy": 59.0,
-            "F1": 50.6,
-            "AUC": 0.6711
-        },
-        "test4_bbc_sdxl": {
-            "Accuracy": 73.2,
-            "F1": 73.73,
-            "AUC": 0.8118
-        },
-        "test5_cnn_sdxl": {
-            "Accuracy": 79.4,
-            "F1": 80.08,
-            "AUC": 0.8719
-        }
+    "test2_bbc_dalle": {
+        "Acc (%)": 65.4,
+        "F1 (%)": 61.81,
+        "Latency (ms/sample)": 15.42
+    },
+    "test3_cnn_dalle": {
+        "Acc (%)": 62.4,
+        "F1 (%)": 59.66,
+        "Latency (ms/sample)": 14.77
+    },
+    "test4_bbc_sdxl": {
+        "Acc (%)": 81.0,
+        "F1 (%)": 82.11,
+        "Latency (ms/sample)": 12.26
+    },
+    "test5_cnn_sdxl": {
+        "Acc (%)": 76.4,
+        "F1 (%)": 77.9,
+        "Latency (ms/sample)": 14.78
     },
     "OOD_Average": {
-        "Accuracy": 67.05,
-        "F1": 63.16,
-        "AUC": 0.75
+        "Acc (%)": 71.3,
+        "F1 (%)": 70.37,
+        "Latency (ms/sample)": 14.31
+    },
+    "Hardware_and_Efficiency": {
+        "Method": "Manual_Adapter",
+        "Bottleneck": 64,
+        "Trainable_Params": 3559426,
+        "Total_Params": 154836739,
+        "Training_Time_Min": 17.02,
+        "Peak_VRAM_GB": 0.8,
+        "Learning_Rate": 1e-05
     }
 }

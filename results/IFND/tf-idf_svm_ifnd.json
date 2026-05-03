@@ -1,17 +1,39 @@
 {
-    "metadata": {
-        "model": "TF-IDF SVM IFND",
-        "dataset": "IFND",
-        "parameters": "N/A",
-        "latency_ms": "N/A"
+    "Dataset": "IFND-multimodal",
+    "Model": "TF-IDF + Linear SVM",
+    "Method": "Traditional ML Baseline",
+    "Label_Mapping": "1=REAL, 0=FAKE",
+    "Preprocessing": {
+        "Vectorizer": "TF-IDF",
+        "Max_Features": 10000,
+        "Ngram_Range": "(1,2)",
+        "Sublinear_TF": true
     },
-    "metrics": {
-        "test_set": {
-            "accuracy": 0.9838,
-            "precision": "N/A",
-            "recall": "N/A",
-            "f1_score": 0.9895,
-            "auc": 0.99275
-        }
+    "Validation_Results": {
+        "Accuracy (%)": 98.19,
+        "Precision (%)": 97.93,
+        "Recall (%)": 99.75,
+        "F1 (%)": 98.83,
+        "AUC": 0.9932
+    },
+    "Test_Results": {
+        "Accuracy (%)": 98.1,
+        "Precision (%)": 97.93,
+        "Recall (%)": 99.63,
+        "F1 (%)": 98.77,
+        "AUC": 0.9958
+    },
+    "Latency_ms": {
+        "Mean": 0.95,
+        "P50": 0.92,
+        "P95": 1.21
+    },
+    "Hardware_Stats": {
+        "Platform": "CPU",
+        "VRAM_GB": 0,
+        "Model_Size_MB": 0.4,
+        "Feature_Dimension": 10000,
+        "Equivalent_Params": 20000,
+        "Training_Time_Seconds": 0.04
     }
 }

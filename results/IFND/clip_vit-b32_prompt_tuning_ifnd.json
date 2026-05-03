@@ -1,15 +1,29 @@
 {
+    "Dataset": "IFND-multimodal",
     "Model": "CLIP ViT-B/32",
-    "Method": "Prompt Tuning (Length=16)",
-    "Dataset": "IFND",
-    "Hardware_Stats": {
-        "Training_Time_Min": 13.54,
-        "Peak_VRAM_GB": 0.97,
-        "Latency_P50_ms": 24.71
+    "Method": "Prompt Tuning",
+    "Prompt_Length": 5,
+    "Label_Mapping": "1=REAL, 0=FAKE",
+    "Test_Results": {
+        "Accuracy (%)": 97.15,
+        "Precision (%)": 97.44,
+        "Recall (%)": 98.88,
+        "F1 (%)": 98.15,
+        "AUC": 0.9882
     },
-    "Test_Metrics": {
-        "Accuracy": 98.86,
-        "F1_Score": 99.26,
-        "AUC": 0.998
+    "Latency_ms": {
+        "Mean": 25.61,
+        "P50": 24.61,
+        "P95": 31.79
+    },
+    "Hardware_Stats": {
+        "Total_Params_M": 152.86,
+        "Trainable_Params_M": 1.58,
+        "Trainable_Percent": 1.033,
+        "Training_Time_Min": 14.47,
+        "Peak_VRAM_GB": 0.97,
+        "Learning_Rate": 1e-05,
+        "Batch_Size": 16,
+        "Epochs": 5
     }
 }

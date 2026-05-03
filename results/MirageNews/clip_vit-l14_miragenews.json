@@ -1,37 +1,40 @@
 {
     "test1_nyt_mj": {
-        "Acc (%)": 100.0,
-        "F1 (%)": 100.0,
-        "Latency (ms/sample)": 37.86
+        "Acc (%)": 99.8,
+        "F1 (%)": 99.8,
+        "Latency (ms/sample)": 31.43
     },
     "test2_bbc_dalle": {
-        "Acc (%)": 38.6,
-        "F1 (%)": 4.36,
-        "Latency (ms/sample)": 34.14
+        "Acc (%)": 41.4,
+        "F1 (%)": 3.3,
+        "Latency (ms/sample)": 31.51
     },
     "test3_cnn_dalle": {
-        "Acc (%)": 36.4,
-        "F1 (%)": 4.22,
-        "Latency (ms/sample)": 32.56
+        "Acc (%)": 38.2,
+        "F1 (%)": 1.28,
+        "Latency (ms/sample)": 31.87
     },
     "test4_bbc_sdxl": {
-        "Acc (%)": 84.2,
-        "F1 (%)": 85.92,
-        "Latency (ms/sample)": 32.08
+        "Acc (%)": 89.0,
+        "F1 (%)": 89.91,
+        "Latency (ms/sample)": 32.68
     },
     "test5_cnn_sdxl": {
-        "Acc (%)": 83.2,
-        "F1 (%)": 85.47,
-        "Latency (ms/sample)": 33.0
+        "Acc (%)": 86.2,
+        "F1 (%)": 87.66,
+        "Latency (ms/sample)": 31.86
     },
     "OOD_Average": {
-        "Acc (%)": 60.6,
-        "F1 (%)": 44.99,
-        "Latency (ms/sample)": 32.94
+        "Acc (%)": 63.7,
+        "F1 (%)": 45.54,
+        "Latency (ms/sample)": 31.98
     },
     "Hardware_Stats": {
-        "Train_Time_Min": 101.89,
+        "Model": "CLIP-ViT-L/14",
+        "Training_Time_Min": 120.29,
         "Peak_VRAM_GB": 8.11,
-        "Trainable_Params": 431160835
+        "Trainable_Params": 431160835,
+        "Total_Params": 431160835,
+        "Percent_Trainable": 100.0
     }
 }

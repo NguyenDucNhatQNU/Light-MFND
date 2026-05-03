@@ -1,18 +1,28 @@
 {
-    "Model": "CLIP ViT-B/32",
-    "Method": "Full Fine-Tuning (FFT)",
     "Dataset": "IFND-multimodal",
+    "Model": "CLIP ViT-B/32 (FFT)",
+    "Method": "Full Fine-Tuning",
+    "Alignment": "REAL=1, FAKE=0",
+    "Test_Results": {
+        "Accuracy (%)": 99.05,
+        "Precision (%)": 99.14,
+        "Recall (%)": 99.63,
+        "F1 (%)": 99.38,
+        "AUC": 0.9914
+    },
+    "Latency": {
+        "Mean_ms": 40.23,
+        "P50_ms": 35.8,
+        "P95_ms": 69.45
+    },
     "Hardware_Stats": {
         "Total_Params_M": 152.85,
-        "Training_Time_Min": 12.71,
+        "Trainable_Params_M": 152.85,
+        "Trainable_Percent": 100.0,
+        "Training_Time_Min": 20.0,
         "Peak_VRAM_GB": 2.87,
-        "Latency_P50_ms": 26.24
-    },
-    "Test_Metrics": {
-        "Accuracy": 79.96,
-        "Precision": 79.27,
-        "Recall": 100.0,
-        "F1_Score": 88.44,
-        "AUC": 0.984
+        "Learning_Rate": 1e-05,
+        "Batch_Size": 16,
+        "Epochs": 5
     }
 }

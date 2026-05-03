@@ -1,56 +1,41 @@
 {
-    "Model": "CLIP ViT-B/32",
-    "Method": "Prompt Tuning (Length=5)",
-    "Dataset": "MirageNews",
-    "Hardware_Stats": {
-        "Trainable_Params": 1579010,
-        "Training_Time_Min": 20.38,
-        "Peak_VRAM_GB": 0.97,
-        "Latency_P50_ms": 26.75,
-        "Latency_P90_ms": 48.31
+    "test1_nyt_mj": {
+        "Acc (%)": 90.2,
+        "F1 (%)": 89.81,
+        "Latency (ms/sample)": 14.96
     },
-    "Test_Splits": {
-        "test1_nyt_mj": {
-            "Accuracy": 97.8,
-            "Precision": 98.78,
-            "Recall": 96.8,
-            "F1": 97.78,
-            "AUC": 0.998
-        },
-        "test2_bbc_dalle": {
-            "Accuracy": 61.2,
-            "Precision": 64.29,
-            "Recall": 50.4,
-            "F1": 56.5,
-            "AUC": 0.6903
-        },
-        "test3_cnn_dalle": {
-            "Accuracy": 65.6,
-            "Precision": 70.53,
-            "Recall": 53.6,
-            "F1": 60.91,
-            "AUC": 0.7062
-        },
-        "test4_bbc_sdxl": {
-            "Accuracy": 73.6,
-            "Precision": 72.52,
-            "Recall": 76.0,
-            "F1": 74.22,
-            "AUC": 0.7839
-        },
-        "test5_cnn_sdxl": {
-            "Accuracy": 78.6,
-            "Precision": 78.49,
-            "Recall": 78.8,
-            "F1": 78.64,
-            "AUC": 0.8531
-        }
+    "test2_bbc_dalle": {
+        "Acc (%)": 61.8,
+        "F1 (%)": 66.07,
+        "Latency (ms/sample)": 16.97
+    },
+    "test3_cnn_dalle": {
+        "Acc (%)": 63.2,
+        "F1 (%)": 67.38,
+        "Latency (ms/sample)": 13.74
+    },
+    "test4_bbc_sdxl": {
+        "Acc (%)": 68.8,
+        "F1 (%)": 74.59,
+        "Latency (ms/sample)": 13.59
+    },
+    "test5_cnn_sdxl": {
+        "Acc (%)": 69.8,
+        "F1 (%)": 74.62,
+        "Latency (ms/sample)": 13.05
     },
     "OOD_Average": {
-        "Accuracy": 69.75,
-        "Precision": 71.46,
-        "Recall": 64.7,
-        "F1": 67.57,
-        "AUC": 0.76
+        "Acc (%)": 65.9,
+        "F1 (%)": 70.66,
+        "Latency (ms/sample)": 14.34
+    },
+    "Hardware_and_Efficiency": {
+        "Method": "Prompt_Tuning",
+        "Prompt_Length": 5,
+        "Trainable_Params": 1579010,
+        "Total_Params": 152856323,
+        "Training_Time_Min": 18.06,
+        "Peak_VRAM_GB": 1.75,
+        "Learning_Rate": 1e-05
     }
 }

@@ -1,20 +1,31 @@
 {
-    "Model": "CLIP ViT-B/32",
-    "Method": "LoRA (r=8)",
     "Dataset": "IFND-multimodal",
+    "Model": "CLIP ViT-B/32 (LoRA)",
+    "Method": "LoRA (r=8, alpha=16)",
+    "Label_Mapping": "1=REAL, 0=FAKE",
+    "Test_Results": {
+        "Accuracy (%)": 99.62,
+        "Precision (%)": 99.51,
+        "Recall (%)": 100.0,
+        "F1 (%)": 99.75,
+        "AUC": 0.9999
+    },
+    "Latency_ms": {
+        "Mean": 48.62,
+        "P50": 48.13,
+        "P95": 66.83
+    },
     "Hardware_Stats": {
         "Total_Params_M": 153.35,
         "Trainable_Params_M": 2.07,
-        "Training_Time_Min": 15.23,
-        "Peak_VRAM_GB": 2.04,
-        "Latency_P50_ms": 75.22,
-        "Latency_P90_ms": 122.32
-    },
-    "Test_Metrics": {
-        "Accuracy": 99.53,
-        "Precision": 99.38,
-        "Recall": 100.0,
-        "F1_Score": 99.69,
-        "AUC": 0.9992
+        "Trainable_Percent": 1.3486,
+        "Training_Time_Min": 16.52,
+        "Peak_VRAM_GB": 1.44,
+        "Learning_Rate": 0.0001,
+        "Batch_Size": 16,
+        "Epochs": 5,
+        "LoRA_r": 8,
+        "LoRA_alpha": 16,
+        "LoRA_dropout": 0.1
     }
 }
