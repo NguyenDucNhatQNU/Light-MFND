@@ -1,41 +1,64 @@
 {
-    "test1_nyt_mj": {
-        "Acc (%)": 92.0,
-        "F1 (%)": 91.8,
-        "Latency (ms/sample)": 17.57
-    },
-    "test2_bbc_dalle": {
-        "Acc (%)": 65.4,
-        "F1 (%)": 61.81,
-        "Latency (ms/sample)": 15.42
-    },
-    "test3_cnn_dalle": {
-        "Acc (%)": 62.4,
-        "F1 (%)": 59.66,
-        "Latency (ms/sample)": 14.77
-    },
-    "test4_bbc_sdxl": {
-        "Acc (%)": 81.0,
-        "F1 (%)": 82.11,
-        "Latency (ms/sample)": 12.26
-    },
-    "test5_cnn_sdxl": {
-        "Acc (%)": 76.4,
-        "F1 (%)": 77.9,
-        "Latency (ms/sample)": 14.78
-    },
-    "OOD_Average": {
-        "Acc (%)": 71.3,
-        "F1 (%)": 70.37,
-        "Latency (ms/sample)": 14.31
-    },
-    "Hardware_and_Efficiency": {
-        "Method": "Manual_Adapter",
-        "Bottleneck": 64,
-        "Trainable_Params": 3559426,
-        "Total_Params": 154836739,
-        "Training_Time_Min": 17.02,
-        "Peak_VRAM_GB": 0.8,
-        "Learning_Rate": 1e-05
-    }
+  "test1_nyt_mj": {
+    "Acc (%)": 92.6,
+    "Precision (%)": 94.56,
+    "Recall (%)": 90.4,
+    "F1 (%)": 92.43,
+    "Latency (ms/sample)": 14.07,
+    "Throughput (samples/s)": 71.07
+  },
+  "test2_bbc_dalle": {
+    "Acc (%)": 64.2,
+    "Precision (%)": 64.73,
+    "Recall (%)": 62.4,
+    "F1 (%)": 63.54,
+    "Latency (ms/sample)": 16.15,
+    "Throughput (samples/s)": 61.92
+  },
+  "test3_cnn_dalle": {
+    "Acc (%)": 65.6,
+    "Precision (%)": 65.12,
+    "Recall (%)": 67.2,
+    "F1 (%)": 66.14,
+    "Latency (ms/sample)": 12.87,
+    "Throughput (samples/s)": 77.73
+  },
+  "test4_bbc_sdxl": {
+    "Acc (%)": 77.2,
+    "Precision (%)": 71.94,
+    "Recall (%)": 89.2,
+    "F1 (%)": 79.64,
+    "Latency (ms/sample)": 14.7,
+    "Throughput (samples/s)": 68.01
+  },
+  "test5_cnn_sdxl": {
+    "Acc (%)": 76.4,
+    "Precision (%)": 71.71,
+    "Recall (%)": 87.2,
+    "F1 (%)": 78.7,
+    "Latency (ms/sample)": 12.43,
+    "Throughput (samples/s)": 80.43
+  },
+  "OOD_Average": {
+    "Acc (%)": 70.85,
+    "Precision (%)": 68.38,
+    "Recall (%)": 76.5,
+    "F1 (%)": 72.0,
+    "Latency (ms/sample)": 14.04,
+    "Throughput (samples/s)": 72.02
+  },
+  "Hardware_and_Efficiency": {
+    "Method": "Manual_Adapter",
+    "Bottleneck": 64,
+    "Trainable_Params": 3559426,
+    "Total_Params": 154836739,
+    "Trainable_Percent": 2.3,
+    "Training_Time_Min": 17.04,
+    "Peak_VRAM_GB": 0.8,
+    "Latency_P50_ms": 34.97,
+    "Throughput_P50_samples_per_sec": 28.6,
+    "Learning_Rate": 1e-5,
+    "Batch_Size": 16,
+    "Epochs": 5
+  }
 }

@@ -1,40 +1,67 @@
 {
-    "test1_nyt_mj": {
-        "Acc (%)": 99.8,
-        "F1 (%)": 99.8,
-        "Latency (ms/sample)": 31.43
-    },
-    "test2_bbc_dalle": {
-        "Acc (%)": 41.4,
-        "F1 (%)": 3.3,
-        "Latency (ms/sample)": 31.51
-    },
-    "test3_cnn_dalle": {
-        "Acc (%)": 38.2,
-        "F1 (%)": 1.28,
-        "Latency (ms/sample)": 31.87
-    },
-    "test4_bbc_sdxl": {
-        "Acc (%)": 89.0,
-        "F1 (%)": 89.91,
-        "Latency (ms/sample)": 32.68
-    },
-    "test5_cnn_sdxl": {
-        "Acc (%)": 86.2,
-        "F1 (%)": 87.66,
-        "Latency (ms/sample)": 31.86
-    },
-    "OOD_Average": {
-        "Acc (%)": 63.7,
-        "F1 (%)": 45.54,
-        "Latency (ms/sample)": 31.98
-    },
-    "Hardware_Stats": {
-        "Model": "CLIP-ViT-L/14",
-        "Training_Time_Min": 120.29,
-        "Peak_VRAM_GB": 8.11,
-        "Trainable_Params": 431160835,
-        "Total_Params": 431160835,
-        "Percent_Trainable": 100.0
-    }
+  "test1_nyt_mj": {
+    "Acc (%)": 99.8,
+    "Precision (%)": 99.6,
+    "Recall (%)": 100.0,
+    "F1 (%)": 99.8,
+    "Latency (ms/sample)": 40.21,
+    "Throughput (samples/s)": 24.87
+  },
+  "test2_bbc_dalle": {
+    "Acc (%)": 47.2,
+    "Precision (%)": 44.44,
+    "Recall (%)": 22.4,
+    "F1 (%)": 29.79,
+    "Latency (ms/sample)": 32.39,
+    "Throughput (samples/s)": 30.87
+  },
+  "test3_cnn_dalle": {
+    "Acc (%)": 53.0,
+    "Precision (%)": 56.52,
+    "Recall (%)": 26.0,
+    "F1 (%)": 35.62,
+    "Latency (ms/sample)": 30.31,
+    "Throughput (samples/s)": 32.99
+  },
+  "test4_bbc_sdxl": {
+    "Acc (%)": 83.8,
+    "Precision (%)": 76.32,
+    "Recall (%)": 98.0,
+    "F1 (%)": 85.81,
+    "Latency (ms/sample)": 29.74,
+    "Throughput (samples/s)": 33.62
+  },
+  "test5_cnn_sdxl": {
+    "Acc (%)": 88.2,
+    "Precision (%)": 81.94,
+    "Recall (%)": 98.0,
+    "F1 (%)": 89.25,
+    "Latency (ms/sample)": 29.81,
+    "Throughput (samples/s)": 33.55
+  },
+  "OOD_Average": {
+    "Acc (%)": 68.05,
+    "Precision (%)": 64.81,
+    "Recall (%)": 61.1,
+    "F1 (%)": 60.12,
+    "Latency (ms/sample)": 30.56,
+    "Throughput (samples/s)": 32.72
+  },
+  "Hardware_Stats": {
+    "Model": "CLIP-ViT-L/14",
+    "Dataset": "MirageNews",
+    "Method": "Full Fine-Tuning (FFT)",
+    "Total_Params_M": 431.16,
+    "Trainable_Params_M": 431.16,
+    "Trainable_Percent": 100.0,
+    "Training_Time_Min": 104.58,
+    "Peak_VRAM_GB": 8.11,
+    "Latency_P50_ms": 35.12,
+    "Throughput_P50_samples_per_sec": 28.47,
+    "Learning_Rate": 1e-5,
+    "Batch_Size": 2,
+    "Gradient_Accumulation": 8,
+    "Effective_Batch_Size": 16,
+    "Epochs": 5
+  }
 }
